@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Grocies payment</title>
+  <script src="https://kit.fontawesome.com/a2b90b3452.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h1 id="title">Payment</h1>
+      <form id="itemForm">
+        <div class="input-field">
+          <input type="text" id="itemName" placeholder="Item Name">
+        </div>
+        <div class="input-field">
+          <select class="size" type="size" id="itemSize" placeholder="Size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="xLarge">XLarge</option>
+          </select>
+        </div>
+        <div class="input-field">
+          <input type="number" id="itemQuantity" placeholder="Quantity">
+        </div>
+        <div class="input-field">
+          <input type="number" id="itemPrice" placeholder="Price">
+        </div>
+        <div class="input-field">
+          <input type="number" id="transportCost" placeholder="Transport">
+        </div>
+        <div class="input-field">
+          <input type="number" id="miscell" placeholder="Miscellaneous">
+        </div>
+        <div class="input-field">
+          <input type="tel" id="phone_no" placeholder="Phone number">
+        </div>
+        <input type="submit" value="Add Item">
+        <!-- <div class="btn-field">
+            <button type="button" id="printItem">Print</button>
+          </div> -->
+      </form>
+
+      <h2 style="float:left;">Total Cost: <span id="totalCost">0</span></h2>
+    </div>
+  </div>
+
+  <hr>
+
+  <table  border="1" id="dataTable" class="table-box">
+    <thead>
+     <tr class="table-row">
+      <th>Item name</th>
+      <th>Item Size</th>
+      <th>Item Quantity</th>
+      <th> Item Price</th>
+      <th>Transportation</th>
+      <th>Miscellaneous</th>
+      <th>Phone number</th>
+      <th>Total Cost</th>
+     </tr>
+    </thead>
+    <tbody  id="storedItems">
+      <tr></tr>
+    </tbody>
+  </table>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
